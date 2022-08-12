@@ -1,5 +1,23 @@
 public class Empregado {
     private String nome;
+    private int tipo;
+    private double salario;
+    private double comissao;
+    private double bonus;
+
+    public double calculaSalario(){
+        if (tipo == 1)
+            return salario;
+        else if (tipo == 2)
+            return salario + salario * comissao;
+        else if (tipo == 3)
+            return salario + bonus;
+        else
+            return 0;            
+    }
+
+
+
     private int idade;
 
     public String getNome() {
