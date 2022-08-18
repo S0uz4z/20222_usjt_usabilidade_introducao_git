@@ -56,13 +56,10 @@ public class Empregado{
       return idade;
     }
   
-    public void setNome(String nome) {
-        return nome;
+    public void getNome(String nome) {
+        return;
     }
   
-    public int getIdade() {
-      return idade;
-    }
   
     public void setNome(String nome) {
       this.nome = nome;
